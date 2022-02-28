@@ -22,7 +22,7 @@ import { GridComponent } from './grid/grid.component';
     RouterModule.forRoot([
       {
         path: '',
-        component: FormComponent,
+        component: GridComponent,
       },
       {
         path: 'grid',
