@@ -1,0 +1,23 @@
+<div class="main-container">
+  <header class="header-2">
+    <div class="branding">
+      <a class="nav-link" routerLink="form">
+        <clr-icon shape="home" size="24"></clr-icon>
+        <span class="title">Clarity</span>
+      </a>
+    </div>
+    <div class="header-nav">
+      <a class="nav-link nav-text" routerLink="grid" routerLinkActive="active"
+        >Grid</a
+      >
+      <a class="nav-link nav-text" routerLink="form" routerLinkActive="active"
+        >Form</a
+      >
+    </div>
+  </header>
+  <div class="content-container">
+    <div class="content-area">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
