@@ -1,6 +1,6 @@
 import { Directive, Input } from '@angular/core';
 // 👇👇👇 if this line breaks when updating Clarity - it's possible Selection is exported as something other than `ɵco` from '@clr/angular/clr-angular.d.ts' - update and we're good
-import { ɵ as Selection } from '@clr/angular';
+import { ɵco as Selection } from '@clr/angular';
 // This is needed since there is really no way that clr-datagrid exposes to explicitly disable selection.
 // So it makes sense to couple with Clarity version.
 
