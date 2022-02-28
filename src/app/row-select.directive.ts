@@ -18,7 +18,7 @@ export { Selection };
  * </clr-datagrid>
  */
 @Directive({
-  selector: '[vssDisableRowSelection],vss-row-selection',
+  selector: 'row-selection',
 })
 export class DisableRowSelectionDirective {
   private changedFrom: number | null = null;

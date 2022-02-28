@@ -1,0 +1,13 @@
+<clr-datagrid [(clrDgSelected)]="selected">
+  <row-selection [disabled]="true"></row-selection>
+  <clr-dg-column>name</clr-dg-column>
+  <clr-dg-column>description</clr-dg-column>
+
+  <clr-dg-row *ngFor="let r of rows" [clrDgItem]="r">
+    <clr-dg-cell>{{ r.name }}</clr-dg-cell>
+    <clr-dg-cell>{{ r.description }}</clr-dg-cell>
+  </clr-dg-row>
+
+</clr-datagrid>
+
+{{ selected | json }}

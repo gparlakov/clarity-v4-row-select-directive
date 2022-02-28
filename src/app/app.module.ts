@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { FormComponent } from './form/form.component';
 import { GridComponent } from './grid/grid.component';
+import { DisableRowSelectionDirective } from './row-select.directive';
 
 @NgModule({
   imports: [
@@ -34,7 +35,12 @@ import { GridComponent } from './grid/grid.component';
       },
     ]),
   ],
-  declarations: [AppComponent, FormComponent, GridComponent],
+  declarations: [
+    AppComponent,
+    FormComponent,
+    GridComponent,
+    DisableRowSelectionDirective,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
