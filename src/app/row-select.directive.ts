@@ -25,15 +25,15 @@ export class DisableRowSelectionDirective {
 
   @Input()
   set disable(v: boolean) {
-    if (v) {
-      if (this.changedFrom == null) {
-        this.changedFrom = this.hostGridSelection.selectionType;
-      }
-      this.hostGridSelection.selectionType = 0; // None
-    } else if (this.changedFrom != null) {
-      this.hostGridSelection.selectionType = this.changedFrom;
-      this.changedFrom = null;
-    }
+    // if (v) {
+    //   if (this.changedFrom == null) {
+    //     this.changedFrom = this.hostGridSelection.selectionType;
+    //   }
+    //   this.hostGridSelection.selectionType = 0; // None
+    // } else if (this.changedFrom != null) {
+    //   this.hostGridSelection.selectionType = this.changedFrom;
+    //   this.changedFrom = null;
+    // }
   }
 
   constructor(private readonly hostGridSelection: Selection) {}
