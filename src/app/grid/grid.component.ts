@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GridComponent implements OnInit {
   selected = [];
+  selectionEnabled = true;
 
   rows = new Array(10).fill(0).map((_, i) => ({
     id: 1 + i,
@@ -16,4 +17,8 @@ export class GridComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  toggleSelection() {
+    this.selectionEnabled = !this.selectionEnabled;
+  }
 }

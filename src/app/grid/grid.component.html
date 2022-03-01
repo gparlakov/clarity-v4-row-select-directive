@@ -1,5 +1,6 @@
+<button class="clr-btn" (click)="toggleSelection()">toggle selection</button>
 <clr-datagrid [(clrDgSelected)]="selected">
-  <row-selection [disabled]="true"></row-selection>
+  <row-selection [disable]="!selectionEnabled"></row-selection>
   <clr-dg-column>name</clr-dg-column>
   <clr-dg-column>description</clr-dg-column>
 
